@@ -1,0 +1,340 @@
+<!DOCTYPE html><html lang="pt_BR" dir="ltr"><head>
+        
+<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <meta name="title" content="Bem-vindo(a) �&nbsp; Base de Dados de Acervos Arquivísticos - Badarq">
+<meta name="description" content="Museu da República - Acervo Arquivístico">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Bem-vindo(a) �&nbsp; Base de Dados de Acervos Arquivísticos - Badarq</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link media="all" href="css/main.css" rel="stylesheet" type="text/css">
+            <script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/drupal.js" type="text/javascript"></script>
+<script src="js/yahoo-dom-event.js" type="text/javascript"></script>
+<script src="js/element-min.js" type="text/javascript"></script>
+<script src="js/button-min.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/jquery.expander.js" type="text/javascript"></script>
+<script src="js/jquery.masonry.js" type="text/javascript"></script>
+<script src="js/jquery.imagesloaded.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/URI.js" type="text/javascript"></script>
+<script src="js/attrchange.js" type="text/javascript"></script>
+<script src="js/qubit.js" type="text/javascript"></script>
+<script src="js/treeView.js" type="text/javascript"></script>
+<script src="js/clipboard.js" type="text/javascript"></script>
+<script src="js/dominion.js" type="text/javascript"></script>
+  </head>
+  <body class="yui-skin-sam staticpage home">
+
+    
+    
+
+
+
+<header id="top-bar">
+
+      <a id="logo" rel="home" href="/index.php/" title=""><img alt="AtoM" src="images/logo.png"></a>  
+      <h1 id="site-name">
+      <a rel="home" title="Início" href="/index.php/"><span>Badarq</span></a>    </h1>
+  
+  <div id="search-bar">
+
+    <div id="browse-menu">
+
+  <button class="top-item top-dropdown" data-toggle="dropdown" data-target="#" aria-expanded="false">Navegar</button>
+
+  <div class="top-dropdown-container top-dropdown-container-right">
+
+    <div class="top-dropdown-arrow">
+      <div class="arrow"></div>
+    </div>
+
+    <div class="top-dropdown-header">
+      <h2>Navegar</h2>
+    </div>
+
+    <div class="top-dropdown-body">
+      <ul>
+        <li class="leaf" id="node_browseInformationObjects"><a href="/index.php/informationobject/browse" title="Descrições arquivísticas">Descrições arquivísticas</a></li><li class="leaf" id="node_browseActors"><a href="/index.php/actor/browse" title="Registros de autoridade">Registros de autoridade</a></li><li class="leaf" id="node_browseRepositories"><a href="/index.php/repository/browse" title="Instituições arquivísticas">Instituições arquivísticas</a></li><li class="leaf" id="node_browseFunctions"><a href="/index.php/function/browse" title="Funções">Funções</a></li><li class="leaf" id="node_browseSubjects"><a href="/index.php/taxonomy/index/id/35" title="Assuntos">Assuntos</a></li><li class="leaf" id="node_browsePlaces"><a href="/index.php/taxonomy/index/id/42" title="Locais">Locais</a></li><li class="leaf" id="node_browseDigitalObjects"><a href="/index.php/informationobject/browse?view=card&amp;onlyMedia=1&amp;topLod=0" title="Objetos digitais">Objetos digitais</a></li>      </ul>
+    </div>
+
+    <div class="top-dropdown-bottom"></div>
+
+  </div>
+
+</div>
+
+    <div id="search-form-wrapper" role="search">
+
+  <h2>Buscar</h2>
+
+  <form action="/index.php/informationobject/browse" data-autocomplete="/index.php/search/autocomplete" autocomplete="off">
+
+    <input type="hidden" name="topLod" value="0">
+    <input type="hidden" name="sort" value="relevance">
+
+    <input type="text" name="query" aria-label="Pesquisar" value="" placeholder="Pesquisar">
+
+    <button aria-label="Buscar"></button>
+
+    <div id="search-realm" class="search-popover">
+
+      
+        <div>
+          <label>
+              <input name="repos" type="radio" value="" checked="checked" data-placeholder="Buscar">
+            Busca global          </label>
+        </div>
+
+        
+        
+      
+      <div class="search-realm-advanced">
+        <a href="/index.php/informationobject/browse?showAdvanced=1&amp;topLod=0">
+          Busca avançada�&nbsp;»
+        </a>
+      </div>
+
+    </div>
+
+  </form>
+
+</div>
+
+  </div>
+
+  <nav>
+
+    
+  <div id="user-menu">
+    <button class="top-item top-dropdown" data-toggle="dropdown" data-target="#" aria-expanded="false">
+        Entrar    </button>
+
+    <div class="top-dropdown-container">
+
+      <div class="top-dropdown-arrow">
+        <div class="arrow"></div>
+      </div>
+
+      <div class="top-dropdown-header">
+        <h2>Possui uma conta?</h2>
+      </div>
+
+      <div class="top-dropdown-body">
+
+        <form action="/index.php/user/login" method="post">
+          <input type="hidden" name="_csrf_token" value="065bcbf4c0191a4aadb3e5246a04f864" id="csrf_token"><input type="hidden" name="next" value="https://atom-museurepublica.museus.gov.br/" id="next">
+          <div class="form-item form-item-email">
+  <label for="email">E-mail <span class="form-required" title="Este campo é obrigatório.">*</span></label>
+  <input type="text" name="email" id="email">
+  
+</div>
+
+          <div class="form-item form-item-password">
+  <label for="password">Senha <span class="form-required" title="Este campo é obrigatório.">*</span></label>
+  <input type="password" name="password" autocomplete="off" id="password">
+  
+</div>
+
+          <button type="submit">Entrar</button>
+
+        </form>
+
+      </div>
+
+      <div class="top-dropdown-bottom"></div>
+
+    </div>
+  </div>
+
+
+    <div id="quick-links-menu" data-toggle="tooltip" data-title="Atalhos">
+
+  <button class="top-item" data-toggle="dropdown" data-target="#" aria-expanded="false">Atalhos</button>
+
+  <div class="top-dropdown-container">
+
+    <div class="top-dropdown-arrow">
+      <div class="arrow"></div>
+    </div>
+
+    <div class="top-dropdown-header">
+      <h2>Atalhos</h2>
+    </div>
+
+    <div class="top-dropdown-body">
+      <ul>
+                              <li><a href="/index.php/" title="Início">Início</a></li>
+                                        <li><a href="/index.php/about" title="Sobre">Sobre</a></li>
+                                        <li><a href="/index.php/privacy" title="Política de Privacidade">Política de Privacidade</a></li>
+                                        <li><a href="http://docs.accesstomemory.org/" title="Ajuda">Ajuda</a></li>
+                                                                              </ul>
+    </div>
+
+    <div class="top-dropdown-bottom"></div>
+
+  </div>
+
+</div>
+
+          <div id="language-menu" data-toggle="tooltip" data-title="Idioma">
+
+  <button class="top-item" data-toggle="dropdown" data-target="#" aria-expanded="false">Idioma</button>
+
+  <div class="top-dropdown-container">
+
+    <div class="top-dropdown-arrow">
+      <div class="arrow"></div>
+    </div>
+
+    <div class="top-dropdown-header">
+      <h2>Idioma</h2>
+    </div>
+
+    <div class="top-dropdown-body">
+      <ul>
+                  <li>
+            <a href="/index.php/?sf_culture=en" title="English">English</a>          </li>
+                  <li class="active">
+            <a href="/index.php/?sf_culture=pt_BR" title="Português do Brasil">Português do Brasil</a>          </li>
+              </ul>
+    </div>
+
+    <div class="top-dropdown-bottom"></div>
+
+  </div>
+
+</div>
+    
+    <div id="clipboard-menu" data-toggle="tooltip" data-title="Área de Transferência" data-load-alert-message="Ocorreu um erro ao carregar o conteúdo da área de transferência." data-export-alert-message="A área de transferência está vazia para este tipo de entidade." data-export-check-url="/index.php/clipboard/exportCheck" data-delete-alert-message="Note que: os itens da área de transferência que foram desmarcados serão removidos quando a página for atualizada. Você pode voltar a selecioná-los agora, ou recarregar a página para removê-los completamente. Clicando na ordenação ou na visualização da impressão também irá recarregar a página - então, qualquer coisa que esteja atualmente desmarcada será perdida!">
+
+  <button class="top-item" data-toggle="dropdown" data-target="#" aria-expanded="false">
+    Área de Transferência  </button>
+
+  <div class="top-dropdown-container">
+
+    <div class="top-dropdown-arrow">
+      <div class="arrow"></div>
+    </div>
+
+    <div class="top-dropdown-header">
+      <h2>Área de Transferência</h2>
+      <span id="count-block" data-information-object-label="Fundos e coleções" data-actor-object-label="Registro de autoridade" data-repository-object-label="Instituição arquivística"></span>
+    </div>
+
+    <div class="top-dropdown-body">
+      <ul>
+        <li class="leaf" id="node_clearClipboard"><a href="/index.php/" title="Limpar todas as seleções">Limpar todas as seleções</a></li><li class="leaf" id="node_goToClipboard"><a href="/index.php/clipboard/view" title="Ir para a área de transferência">Ir para a área de transferência</a></li><li class="leaf" id="node_loadClipboard"><a href="/index.php/clipboard/load" title="Carregar Área de Transferência">Carregar Área de Transferência</a></li><li class="leaf" id="node_saveClipboard"><a href="/index.php/clipboard/save" title="Salvar área de transferência">Salvar área de transferência</a></li>      </ul>
+    </div>
+
+    <div class="top-dropdown-bottom"></div>
+
+  </div>
+
+</div>
+
+    
+  </nav>
+
+  
+</header>
+
+
+    
+    <div id="wrapper" class="container" role="main">
+
+              
+      <div class="row">
+
+        <div class="span3">
+
+          <div id="sidebar">
+
+            
+  
+  <section>
+    <h2>Navegar por</h2>
+    <ul>
+                              <li><a href="/index.php/informationobject/browse">Descrições arquivísticas</a></li>
+                  <li><a href="/index.php/actor/browse">Registros de autoridade</a></li>
+                  <li><a href="/index.php/repository/browse">Instituições arquivísticas</a></li>
+                  <li><a href="/index.php/function/browse">Funções</a></li>
+                  <li><a href="/index.php/taxonomy/index/id/35">Assuntos</a></li>
+                  <li><a href="/index.php/taxonomy/index/id/42">Locais</a></li>
+                  <li><a href="/index.php/informationobject/browse?view=card&amp;onlyMedia=1&amp;topLod=0">Objetos digitais</a></li>
+                  </ul>
+  </section>
+
+  <section id="popular-this-week">
+
+  <h2>Popular nesta semana</h2>
+  <ul>
+                <li><a href="/index.php/eleicoes-2">Eleições<strong>�&nbsp;�&nbsp;351 visitas</strong></a></li>
+                <li><a href="/index.php/texto-a-respeito-da-construcao-de-belo-horizonte-do-trabalho-da-comissao-construtora-da-nova-capital-e-das-aplicacoes-tecnologicas">Texto a respeito da construção de Belo Horizonte, do trabalho da Comissão Construtora da Nova Capital e das aplicações tecnológicas.<strong>�&nbsp;�&nbsp;25 visitas</strong></a></li>
+                <li><a href="/index.php/bagueira-leal">Bagueira Leal<strong>�&nbsp;�&nbsp;24 visitas</strong></a></li>
+                <li><a href="/index.php/correspondencia-8">Correspondência<strong>�&nbsp;�&nbsp;19 visitas</strong></a></li>
+                <li><a href="/index.php/desenhos-2">Desenhos<strong>�&nbsp;�&nbsp;17 visitas</strong></a></li>
+                <li><a href="/index.php/carlos-latuff">Carlos Latuff<strong>�&nbsp;�&nbsp;17 visitas</strong></a></li>
+                <li><a href="/index.php/album-de-fotografias-24-da-familia-do-general-antonio-de-souza-neto-combatente-da-guerra-dos-farrapos-oferecido-por-sua-filha-a-getulio-vargas-em-carta-anexa">Álbum de fotografias da família do General Antonio de Souza Neto, combatente da Guerra dos Farrapos, oferecido por sua filha a Getúlio Vargas em carta anexa<strong>�&nbsp;�&nbsp;15 visitas</strong></a></li>
+                <li><a href="/index.php/palacio-do-catete-2">Palácio do Catete<strong>�&nbsp;�&nbsp;14 visitas</strong></a></li>
+                <li><a href="/index.php/9zan-ebbp-4ezx">Jornal A Ordem<strong>�&nbsp;�&nbsp;13 visitas</strong></a></li>
+                <li><a href="/index.php/museu-da-republica-ibram-arquivo-historico-e-institucional">Museu da República (IBRAM). Arquivo Histórico e Institucional<strong>�&nbsp;�&nbsp;13 visitas</strong></a></li>
+      </ul>
+
+</section>
+
+
+          </div>
+
+        </div>
+
+        <div class="span9">
+
+          <div id="main-column">
+
+              <h1>Bem-vindo(a) �&nbsp; Base de Dados de Acervos Arquivísticos</h1>
+
+            
+                          <div id="content">
+                
+
+
+<div class="page">
+  <p>Badarq - Base de Dados de Acervos Arquivísticos é o repositório de informações sobre o acervo do Arquivo Histórico e Institucional do Museu da República,  que tem sob sua guarda registros importantes para a história da República, assim como para os estudos da trajetória do próprio Museu. São documentos textuais, fotografias, mapas e plantas arquitetônicas.</p>
+<p>Informações Técnicas<br>O sistema utilizado no Badarq é o AtoM, desenvolvido pelo Conselho Internacional de Arquivos de acordo com normas nacionais e internacionais de descrição arquivística.</p>
+<p>Consulta ao Acervo Arquivístico<br>Realizada mediante agendamento prévio, através do  e-mail mr.arquivo@museus.gov.br</p>
+<p>Uso de imagem<br>O Museu da República segue os procedimentos estipulados pela Resolução Normativa nº 15/2022 que regulamenta a captação, utilização e disponibilização de arquivos digitais iconográficos, textuais, audiovisuais e sonoros dos bens culturais do Instituto Brasileiro de Museus (Ibram). A resolução pode ser consultada através do link:</p>
+<p><a href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/03/2022&amp;jornal=515&amp;pagina=138">https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=16/03/2022&amp;jornal=515&amp;pagina=138</a></p>
+<p>A base de dados BADARQ está em constante alimentação e revisão e, na medida em que os fundos/coleções forem tratados, as informações serão disponibilizadas para consulta.</p></div>
+
+              </div>
+            
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <footer>
+
+  
+  
+  <div id="print-date">
+    Impressão: 2024-06-13  </div>
+
+  <div id="js-i18n">
+    <div id="read-more-less-links" data-read-more-text="Ler mais" data-read-less-text="Ler menos">
+    </div>
+  </div>
+
+</footer>
+
+
+  
+
+</body></html>
