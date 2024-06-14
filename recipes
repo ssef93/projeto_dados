@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Beans</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <div id = "container">
+        <h1>Black Beans</h1>
+        <img src="../img/beans.png" alt="">
+        <h2>Best Black Beans    </h2>
+        <p>This black beans recipe is ready in just 15 minutes! With a can of black beans, onion, and garlic from your pantry, plus some chopped fresh cilantro, this quick and easy side dish is a no-brainer when you're short on time. Pairs well with any Mexican or Cuban meal.    </p>
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Black beans: This easy recipe starts with a 16-ounce can of black beans.</li>
+            <li>Onion and garlic: The canned black beans are cooked with a chopped onion and minced garlic for extra flavor.</li>
+            <li>Seasonings: You'll need salt and cayenne pepper</li>
+            <li>Cilantro: Finish the black beans with fresh cilantro for a burst of color and flavor.</li>
+        </ul>
+        <h2>Steps to make</h2>
+        <ol>
+            <li>Gather all ingredients.</li>
+            <li>Combine beans, onion, and garlic in a medium saucepan; bring to a boil.</li>
+            <li>Reduce heat to medium-low. Stir in cilantro, cayenne, and salt. Simmer for 5 minutes.</li>
+            <li>Remove from pot, sprinkle with cilantro, and serve.</li>
+        </ol>
+    </div>
+</body>
+</html>
